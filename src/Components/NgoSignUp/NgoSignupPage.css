@@ -1,0 +1,196 @@
+:root {
+  --bg-cream: #fff6ee;
+  --accent-orange: #ff7a00;
+  --deep-brown: #3e2c23;
+  --text-gray: #4a4a4a;
+  --card-white: #ffffff;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Segoe UI", sans-serif;
+  background: var(--bg-cream);
+  color: var(--text-gray);
+}
+
+/* === CONTAINER === */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Overlay on background image */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+/* === BOX === */
+.signup-box {
+  position: relative;
+  z-index: 2;
+  background: var(--card-white);
+  padding: 16px 24px;       /* reduced padding */
+  border-radius: 16px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 520px;
+  text-align: center;
+}
+
+/* === TITLES === */
+.signup-title {
+  color: var(--deep-brown);
+  margin-bottom: 6px;       /* less margin */
+  font-size: 23px;          /* slightly smaller */
+  font-weight: 700;
+}
+
+.signup-subtitle {
+  font-size: 13px;          /* smaller */
+  margin-bottom: 12px;      /* reduced spacing */
+  color: var(--text-gray);
+}
+
+/* === FORM === */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;                 /* tighter spacing */
+  text-align: left;
+}
+
+.input-group label {
+  font-weight: 600;
+  color: var(--deep-brown);
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;             /* shorter input height */
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+  border-color: var(--accent-orange);
+}
+
+/* === SIGNUP BUTTON === */
+.signup-btn {
+  background: var(--accent-orange);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px;            /* reduced button height */
+  font-size: 14px;
+  border-radius: 6px;
+  margin-top: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  width: 100%;
+}
+
+.signup-btn:hover {
+  background: #e56b00;
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;           /* reduced vertical space */
+  color: #999;
+  font-size: 12px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ddd;
+}
+
+/* Google Button */
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;            /* shorter button */
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  width: 100%;
+}
+
+.google-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+.google-btn:hover {
+  background: #f9f9f9;
+}
+
+/* Login link */
+.login-text {
+  margin-top: 10px;         /* reduced spacing */
+  font-size: 12px;
+  text-align: center;
+}
+
+.login-text a {
+  color: var(--accent-orange);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 600px) {
+  .signup-box {
+    max-width: 90%;
+    padding: 14px 18px;     /* also slightly reduced on mobile */
+  }
+
+  .signup-title {
+    font-size: 20px;
+  }
+
+  .signup-subtitle {
+    font-size: 12px;
+  }
+}

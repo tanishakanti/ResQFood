@@ -1,0 +1,235 @@
+.app-nh {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  color: #222;
+  padding-bottom: 40px;
+}
+  
+  /* Header */
+  .header-nh {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .logo-nh {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .header-actions-nh {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .notif-btn-nh {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .profile-img-nh {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Highlight Banner */
+.highlight-banner-nh {
+    position: relative;
+    margin: 20px;
+    border-radius: 12px;
+    background-image: url('../../assets/food_pic1.png'); 
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    color: white;
+    overflow: hidden;
+  }
+  
+  /* Dark overlay */
+  .highlight-banner-nh::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5); 
+    border-radius: 12px;
+  }
+  
+  /* Content aligned left */
+  .highlight-content-nh {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;   /* stack tag, title, paragraph */
+    align-items: flex-start;  /* push everything to left */
+    padding: 30px 40px;       /* adjust left spacing */
+    text-align: left; 
+    max-width: 500px;         /* keeps text readable */
+  }
+  
+  .urgent-tag-nh {
+    background: #d62828;
+    color: #fff;
+    font-size: 0.85rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;  /* space below the tag */
+  }
+  
+  .highlight-content-nh h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 8px 0;
+    color: white;
+  }
+  
+  .highlight-content-nh p {
+    font-size: 1rem;
+    margin-top: 6px;
+  }
+  
+  
+  /* Stats Section */
+  .stats-container-nh {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    gap: 12px;
+  }
+  
+  .stat-card-nh {
+    flex: 1;
+    background: #fff;
+    text-align: center;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .stat-card-nh h3 {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+  }
+  
+  
+  /* Donation Feed */
+  .donation-feed-nh {
+    padding: 20px;
+  }
+  
+  .feed-header-nh {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .feed-controls-nh select {
+    margin-left: 10px;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+  }
+  
+  .feed-list-nh {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .donation-card-nh {
+    display: flex;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+  }
+  
+  .donation-card-nh img {
+    width: 270px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .donation-info-nh {
+    flex: 1;
+    padding: 12px;
+    font-size: 21px;
+  }
+  
+  .address-nh {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .donation-actions-nh {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px;
+    align-items: flex-end;
+  }
+  
+  .status-badge-nh {
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .status-badge-nh.urgent {
+    background: #ffebeb;
+    color: #d62828;
+  }
+  
+  .status-badge-nh.pickup {
+    background: #e7f9ee;
+    color: #2a9d8f;
+  }
+  
+  .decline-btn-nh {
+    background: #c1bfbf;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  /* Footer Buttons */
+  .feed-footer-nh {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .urgent-btn-nh {
+    background: #FF7A00;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .map-btn-nh{
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 20px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  
